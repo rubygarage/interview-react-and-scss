@@ -14,6 +14,11 @@ const config = {
   ],
   modulePaths: ["<rootDir>/"],
   setupFilesAfterEnv: ["<rootDir>/jest.setup.js"],
+  npm: {
+    styles: {
+    'react-big-calendar': ['lib/css/react-big-calendar.css']
+    }
+  },
 };
 
 module.exports = createJestConfig(config);
